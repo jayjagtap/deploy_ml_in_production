@@ -1,4 +1,4 @@
-zmq==25.0.0
+pyzmq==25.0.0
 Flask==2.2.3
 Werkzeug==2.2.3
 aiohttp==3.8.3
