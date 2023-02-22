@@ -7,7 +7,7 @@ import numpy as np
 class Efn_classifier():
     
     def __init__(self):
-        self.model = tf.keras.applications.efficientnet.EfficientNetB7(
+        self.model = tf.keras.applications.efficientnet.EfficientNetB1(
                         include_top=True,
                         weights='imagenet',
                         input_tensor=None,
@@ -20,7 +20,7 @@ class Efn_classifier():
     def get_predictions(self, file_path):
 
         # Load a given image and preprocess it for efficientnet
-        img = image.load_img(file_path, target_size=(600, 600))
+        img = image.load_img(file_path, target_size=(240, 240))
         x = image.img_to_array(img)
         x = np.expand_dims(x, axis=0)
         x = preprocess_input(x)
