@@ -45,7 +45,7 @@ class Server(threading.Thread):
 
         # Create ZeroMQ socket of type ROUTER: Load Balancer distributes incoming messages
         frontend = context.socket(zmq.ROUTER)
-        frontend.bind('tcp://*:5576')
+        frontend.bind('tcp://*:7777')
 
         # Create ZeroMQ socket of type DEALER: Worker thread
         backend = context.socket(zmq.DEALER)
