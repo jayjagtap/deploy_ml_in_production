@@ -1,4 +1,4 @@
-# deploy_ml_in_production
+# Scalable Micro-service architecture to Deploy EfficientNet in Production
 Templates directory: Flask recognizeds this to contain html code
 static directory: Flask recognizes this to contain CSS, JS code
 app.py : This file is the root of our Flask application. We define all the routes and functions to perform for each action.
