@@ -59,4 +59,5 @@ def upload_file():
         context.term()
     
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True, port=9000)
+    # app.run(host="0.0.0.0", debug=True, port=9000) # Test on PC
+    app.run()
