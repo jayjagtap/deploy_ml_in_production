@@ -30,3 +30,15 @@ class Efn_classifier():
         predictions = decode_predictions(features, top=3)[0]
 
         return predictions
+
+"""
+The Router-Dealer pattern is another messaging pattern in ZeroMQ that is commonly 
+used for high-performance and scalable distributed systems. The pattern is often 
+used for load-balancing and task distribution in a cluster of nodes.
+
+In this pattern, the Router and Dealer sockets are used in combination to create
+ a scalable, asynchronous message passing system.
+
+The Router socket is used as a load balancer, which distributes incoming messages to the various Dealer sockets that are connected to it. 
+Each Dealer socket represents a worker node that is capable of handling tasks.
+"""
