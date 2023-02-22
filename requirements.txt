@@ -1,4 +1,4 @@
-tensorflow==2.12.0rc0
+tensorflow-cpu==2.12.0rc0
 pyzmq==25.0.0
 Flask==2.2.3
 Werkzeug==2.2.3
